@@ -1,277 +1,179 @@
 {
-  "last_updated": "2026-02-16T07:51:23.103Z",
+  "last_updated": "2026-02-16T23:07:26.963Z",
   "season": "2025-2026",
   "team_pool": [
     {
-      "participant": "Henry",
-      "total_points": 528,
+      "participant": "Erik",
+      "total_points": 0,
       "rank": 1,
       "teams": [
         {
-          "name": "Bayern Munich",
-          "league_points": 82,
-          "uefa_points": 15,
+          "name": "Manchester City",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 82 | UCL Phase: 15"
+          "details": "League: 0"
         },
         {
-          "name": "Liverpool",
-          "league_points": 84,
-          "uefa_points": 21,
+          "name": "Atletico Madrid",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 84 | UCL Phase: 21"
+          "details": "League: 0"
         },
         {
-          "name": "Borussia Dortmund",
-          "league_points": 57,
-          "uefa_points": 15,
+          "name": "Benfica",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 57 | UCL Phase: 15"
+          "details": "League: 0"
         },
         {
-          "name": "Sporting CP",
-          "league_points": 82,
-          "uefa_points": 11,
+          "name": "Ajax",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 82 | UCL Phase: 11"
+          "details": "League: 0"
         },
         {
-          "name": "Atalanta",
-          "league_points": 74,
-          "uefa_points": 15,
+          "name": "Feyenoord",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 74 | UCL Phase: 15"
+          "details": "League: 0"
         },
         {
-          "name": "Lyon",
-          "league_points": 57,
-          "uefa_points": 15,
+          "name": "Fiorentina",
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 57 | UEL Phase: 15"
+          "details": "League: 0"
         }
       ]
     },
     {
-      "participant": "Josh",
-      "total_points": 528,
+      "participant": "Henry",
+      "total_points": 0,
       "rank": 2,
       "teams": [
         {
-          "name": "Barcelona",
-          "league_points": 88,
-          "uefa_points": 19,
-          "domestic_cup_points": 0,
-          "details": "League: 88 | UCL Phase: 19"
-        },
-        {
-          "name": "Galatasaray",
-          "league_points": 95,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 95 | UEL Phase: 13"
-        },
-        {
-          "name": "PSV Eindhoven",
-          "league_points": 79,
-          "uefa_points": 14,
-          "domestic_cup_points": 0,
-          "details": "League: 79 | UCL Phase: 14"
-        },
-        {
-          "name": "Aston Villa",
-          "league_points": 66,
-          "uefa_points": 16,
-          "domestic_cup_points": 0,
-          "details": "League: 66 | UCL Phase: 16"
-        },
-        {
-          "name": "AS Roma",
-          "league_points": 69,
-          "uefa_points": 12,
-          "domestic_cup_points": 0,
-          "details": "League: 69 | UEL Phase: 12"
-        },
-        {
-          "name": "Strasbourg",
-          "league_points": 57,
+          "name": "Bayern Munich",
+          "league_points": 0,
           "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 57"
+          "details": "League: 0"
+        },
+        {
+          "name": "Liverpool",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Borussia Dortmund",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Sporting CP",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Atalanta",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Lyon",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
         }
       ]
     },
     {
       "participant": "Owen",
-      "total_points": 527,
+      "total_points": 0,
       "rank": 3,
       "teams": [
         {
           "name": "Arsenal",
-          "league_points": 74,
-          "uefa_points": 19,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 74 | UCL Phase: 19"
+          "details": "League: 0"
         },
         {
           "name": "Chelsea",
-          "league_points": 69,
-          "uefa_points": 18,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 69 | UECL Phase: 18"
+          "details": "League: 0"
         },
         {
           "name": "Celtic",
-          "league_points": 92,
-          "uefa_points": 12,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 92 | UCL Phase: 12"
+          "details": "League: 0"
         },
         {
           "name": "Fenerbahce",
-          "league_points": 84,
-          "uefa_points": 10,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 84 | UEL Phase: 10"
+          "details": "League: 0"
         },
         {
           "name": "Slavia Praha",
-          "league_points": 60,
-          "uefa_points": 15,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 60 | UEL Phase: 15"
+          "details": "League: 0"
         },
         {
           "name": "AS Monaco",
-          "league_points": 61,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 61 | UCL Phase: 13"
-        }
-      ]
-    },
-    {
-      "participant": "Erik",
-      "total_points": 519,
-      "rank": 4,
-      "teams": [
-        {
-          "name": "Manchester City",
-          "league_points": 71,
-          "uefa_points": 11,
-          "domestic_cup_points": 0,
-          "details": "League: 71 | UCL Phase: 11"
-        },
-        {
-          "name": "Atletico Madrid",
-          "league_points": 76,
-          "uefa_points": 18,
-          "domestic_cup_points": 0,
-          "details": "League: 76 | UCL Phase: 18"
-        },
-        {
-          "name": "Benfica",
-          "league_points": 80,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 80 | UCL Phase: 13"
-        },
-        {
-          "name": "Ajax",
-          "league_points": 78,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 78 | UEL Phase: 13"
-        },
-        {
-          "name": "Feyenoord",
-          "league_points": 68,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 68 | UCL Phase: 13"
-        },
-        {
-          "name": "Fiorentina",
-          "league_points": 65,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 65 | UECL Phase: 13"
-        }
-      ]
-    },
-    {
-      "participant": "Scott",
-      "total_points": 457,
-      "rank": 5,
-      "teams": [
-        {
-          "name": "PSG",
-          "league_points": 84,
-          "uefa_points": 13,
-          "domestic_cup_points": 0,
-          "details": "League: 84 | UCL Phase: 13"
-        },
-        {
-          "name": "Napoli",
-          "league_points": 82,
+          "league_points": 0,
           "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 82"
-        },
-        {
-          "name": "FC Porto",
-          "league_points": 71,
-          "uefa_points": 11,
-          "domestic_cup_points": 0,
-          "details": "League: 71 | UEL Phase: 11"
-        },
-        {
-          "name": "Bayer Leverkusen",
-          "league_points": 69,
-          "uefa_points": 16,
-          "domestic_cup_points": 0,
-          "details": "League: 69 | UCL Phase: 16"
-        },
-        {
-          "name": "Rangers",
-          "league_points": 75,
-          "uefa_points": 14,
-          "domestic_cup_points": 0,
-          "details": "League: 75 | UEL Phase: 14"
-        },
-        {
-          "name": "Ipswich Town",
-          "league_points": 22,
-          "uefa_points": 0,
-          "domestic_cup_points": 0,
-          "details": "League: 22"
+          "details": "League: 0"
         }
       ]
     },
     {
       "participant": "Ian",
-      "total_points": 337,
-      "rank": 6,
+      "total_points": 0,
+      "rank": 4,
       "teams": [
         {
           "name": "Real Madrid",
-          "league_points": 84,
-          "uefa_points": 15,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 84 | UCL Phase: 15"
+          "details": "League: 0"
         },
         {
           "name": "Inter Milan",
-          "league_points": 81,
-          "uefa_points": 19,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 81 | UCL Phase: 19"
+          "details": "League: 0"
         },
         {
           "name": "Red Star Belgrade",
-          "league_points": 86,
-          "uefa_points": 6,
+          "league_points": 0,
+          "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 86 | UCL Phase: 6"
+          "details": "League: 0"
         },
         {
           "name": "Olympiacos",
@@ -289,120 +191,125 @@
         },
         {
           "name": "Union SG",
-          "league_points": 46,
+          "league_points": 0,
           "uefa_points": 0,
           "domestic_cup_points": 0,
-          "details": "League: 46"
+          "details": "League: 0"
+        }
+      ]
+    },
+    {
+      "participant": "Scott",
+      "total_points": 0,
+      "rank": 5,
+      "teams": [
+        {
+          "name": "PSG",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Napoli",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "FC Porto",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Bayer Leverkusen",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Rangers",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Ipswich Town",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        }
+      ]
+    },
+    {
+      "participant": "Josh",
+      "total_points": 0,
+      "rank": 6,
+      "teams": [
+        {
+          "name": "Barcelona",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Galatasaray",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "PSV Eindhoven",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Aston Villa",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "AS Roma",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
+        },
+        {
+          "name": "Strasbourg",
+          "league_points": 0,
+          "uefa_points": 0,
+          "domestic_cup_points": 0,
+          "details": "League: 0"
         }
       ]
     }
   ],
   "goals_pool": [
     {
-      "participant": "Henry",
-      "total_goals": 63,
+      "participant": "Erik",
+      "total_goals": 0,
       "rank": 1,
       "players": [
         {
-          "name": "Erling Haaland",
-          "goals": 58
-        },
-        {
-          "name": "Bukayo Saka",
-          "goals": 4
-        },
-        {
-          "name": "Bradley Barcola",
-          "goals": 1
-        },
-        {
-          "name": "Julian Alvarez",
-          "goals": 0
-        },
-        {
-          "name": "Jonathan David",
-          "goals": 0
-        },
-        {
-          "name": "Victor Aghehowa",
-          "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Scott",
-      "total_goals": 58,
-      "rank": 2,
-      "players": [
-        {
-          "name": "Mohamed Salah",
-          "goals": 34
-        },
-        {
-          "name": "Victor Osimhen",
-          "goals": 8
-        },
-        {
-          "name": "Vinícius Júnior",
-          "goals": 0
-        },
-        {
-          "name": "Cole Palmer",
-          "goals": 16
-        },
-        {
-          "name": "Lois Openda",
-          "goals": 0
-        },
-        {
-          "name": "Dusan Vlahovic",
-          "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Josh",
-      "total_goals": 53,
-      "rank": 3,
-      "players": [
-        {
-          "name": "Harry Kane",
-          "goals": 53
-        },
-        {
-          "name": "Lautaro Martinez",
-          "goals": 0
-        },
-        {
-          "name": "Omar Marmoush",
-          "goals": 0
-        },
-        {
-          "name": "Hugo Ekitike",
-          "goals": 0
-        },
-        {
-          "name": "Alassane Plea",
-          "goals": 0
-        },
-        {
-          "name": "Emanuel Emegha",
-          "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Erik",
-      "total_goals": 51,
-      "rank": 4,
-      "players": [
-        {
           "name": "Kylian Mbappe",
-          "goals": 48
+          "goals": 0
         },
         {
           "name": "Alexander Isak",
-          "goals": 3
+          "goals": 0
         },
         {
           "name": "Serhou Guirassy",
@@ -423,13 +330,75 @@
       ]
     },
     {
+      "participant": "Henry",
+      "total_goals": 0,
+      "rank": 2,
+      "players": [
+        {
+          "name": "Erling Haaland",
+          "goals": 0
+        },
+        {
+          "name": "Bukayo Saka",
+          "goals": 0
+        },
+        {
+          "name": "Bradley Barcola",
+          "goals": 0
+        },
+        {
+          "name": "Julian Alvarez",
+          "goals": 0
+        },
+        {
+          "name": "Jonathan David",
+          "goals": 0
+        },
+        {
+          "name": "Victor Aghehowa",
+          "goals": 0
+        }
+      ]
+    },
+    {
+      "participant": "Owen",
+      "total_goals": 0,
+      "rank": 3,
+      "players": [
+        {
+          "name": "Viktor Gyökeres",
+          "goals": 0
+        },
+        {
+          "name": "Raphinha",
+          "goals": 0
+        },
+        {
+          "name": "Lamine Yamal",
+          "goals": 0
+        },
+        {
+          "name": "Michael Olise",
+          "goals": 0
+        },
+        {
+          "name": "Cody Gakpo",
+          "goals": 0
+        },
+        {
+          "name": "Desire Doue",
+          "goals": 0
+        }
+      ]
+    },
+    {
       "participant": "Ian",
-      "total_goals": 48,
-      "rank": 5,
+      "total_goals": 0,
+      "rank": 4,
       "players": [
         {
           "name": "Robert Lewandowski",
-          "goals": 45
+          "goals": 0
         },
         {
           "name": "Ousmane Dembele",
@@ -441,11 +410,11 @@
         },
         {
           "name": "Alexander Sorloth",
-          "goals": 2
+          "goals": 0
         },
         {
           "name": "Moise Kean",
-          "goals": 1
+          "goals": 0
         },
         {
           "name": "Ollie Watkins",
@@ -454,32 +423,63 @@
       ]
     },
     {
-      "participant": "Owen",
-      "total_goals": 5,
+      "participant": "Scott",
+      "total_goals": 0,
+      "rank": 5,
+      "players": [
+        {
+          "name": "Mohamed Salah",
+          "goals": 0
+        },
+        {
+          "name": "Victor Osimhen",
+          "goals": 0
+        },
+        {
+          "name": "Vinícius Júnior",
+          "goals": 0
+        },
+        {
+          "name": "Cole Palmer",
+          "goals": 0
+        },
+        {
+          "name": "Lois Openda",
+          "goals": 0
+        },
+        {
+          "name": "Dusan Vlahovic",
+          "goals": 0
+        }
+      ]
+    },
+    {
+      "participant": "Josh",
+      "total_goals": 0,
       "rank": 6,
       "players": [
         {
-          "name": "Viktor Gyökeres",
+          "name": "Harry Kane",
           "goals": 0
         },
         {
-          "name": "Raphinha",
-          "goals": 1
-        },
-        {
-          "name": "Lamine Yamal",
+          "name": "Lautaro Martinez",
           "goals": 0
         },
         {
-          "name": "Michael Olise",
-          "goals": 4
-        },
-        {
-          "name": "Cody Gakpo",
+          "name": "Omar Marmoush",
           "goals": 0
         },
         {
-          "name": "Desire Doue",
+          "name": "Hugo Ekitike",
+          "goals": 0
+        },
+        {
+          "name": "Alassane Plea",
+          "goals": 0
+        },
+        {
+          "name": "Emanuel Emegha",
           "goals": 0
         }
       ]
