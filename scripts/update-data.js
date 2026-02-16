@@ -7,7 +7,7 @@
  * Run manually:  API_FOOTBALL_KEY=xxx node scripts/update-data.js
  * Run via CRON:   GitHub Actions (see .github/workflows/update-standings.yml)
  * 
- * API Budget: Uses ~20-25 requests per run (well within 100/day free limit)
+ * API Budget: Uses ~53 requests per run (within 100/day free limit)
  */
 
 const fs = require('fs');
@@ -16,7 +16,7 @@ const https = require('https');
 
 const API_KEY = process.env.API_FOOTBALL_KEY || '';
 const API_HOST = 'v3.football.api-sports.io';
-const SEASON = 2024; // API-Football uses the start-year of the season
+const SEASON = 2024; // Free plan max: 2024 (2024-25 season)
 const ROSTERS_PATH = path.join(__dirname, '..', 'data', 'rosters.json');
 const RESULTS_PATH = path.join(__dirname, '..', 'data', 'results.json');
 
@@ -24,9 +24,7 @@ const RESULTS_PATH = path.join(__dirname, '..', 'data', 'results.json');
 // LEAGUE & TEAM ID MAPPINGS (API-Football well-known IDs)
 // ══════════════════════════════════════════════════════════════════
 
-// Leagues we need to fetch standings from
 const LEAGUES = {
-    // league_id: { name, country }
     39: { name: 'Premier League', country: 'England' },
     140: { name: 'La Liga', country: 'Spain' },
     78: { name: 'Bundesliga', country: 'Germany' },
@@ -40,13 +38,12 @@ const LEAGUES = {
     345: { name: 'Czech First League', country: 'Czech Republic' },
     286: { name: 'Serbian SuperLiga', country: 'Serbia' },
     197: { name: 'Super League', country: 'Greece' },
-    // UEFA competitions
     2: { name: 'UEFA Champions League', country: 'Europe' },
     3: { name: 'UEFA Europa League', country: 'Europe' },
     848: { name: 'UEFA Conference League', country: 'Europe' },
 };
 
-// Team name → { api_id, league_id }
+// Team name -> { api_id, league_id }
 const TEAM_MAP = {
     // Erik
     'Manchester City': { api_id: 50, league_id: 39 },
@@ -92,90 +89,50 @@ const TEAM_MAP = {
     'Strasbourg': { api_id: 95, league_id: 61 },
 };
 
-// Player name → api_id
+// Player name -> api_id (verified from /players/squads endpoint)
 const PLAYER_MAP = {
     // Erik
-    'Kylian Mbappe': 278,
-    'Alexander Isak': 2295,
-    'Serhou Guirassy': 25074,
-    'Jhon Duran': 337092,
-    'Rasmus Højlund': 303894,
-    'Mika Biereth': 338393,
+    'Kylian Mbappe': 278,           // Real Madrid #10
+    'Alexander Isak': 903,          // Newcastle #14
+    'Serhou Guirassy': 21393,       // BVB #9
+    'Jhon Duran': 337092,           // Aston Villa / TBD
+    'Rasmus Højlund': 303894,       // Man United
+    'Mika Biereth': 283026,         // Monaco #14
     // Henry
-    'Erling Haaland': 1100,
-    'Bukayo Saka': 136718,
-    'Bradley Barcola': 324282,
-    'Julian Alvarez': 186155,
-    'Jonathan David': 9100,
-    'Victor Aghehowa': 407897,
+    'Erling Haaland': 1100,         // Man City
+    'Bukayo Saka': 1460,            // Arsenal #7
+    'Bradley Barcola': 161904,      // PSG #29
+    'Julian Alvarez': 6009,         // Atletico #19
+    'Jonathan David': 8489,         // Juventus #30
+    'Victor Aghehowa': 407897,      // TBD
     // Owen
-    'Viktor Gyökeres': 196968,
-    'Raphinha': 48783,
-    'Lamine Yamal': 401188,
-    'Michael Olise': 162771,
-    'Cody Gakpo': 303430,
-    'Desire Doue': 389998,
+    'Viktor Gyökeres': 18979,       // Arsenal #14
+    'Raphinha': 1496,               // Barcelona #11
+    'Lamine Yamal': 386828,         // Barcelona #10
+    'Michael Olise': 19617,         // Bayern #17
+    'Cody Gakpo': 247,              // Liverpool #18
+    'Desire Doue': 343027,          // PSG #14
     // Ian
-    'Robert Lewandowski': 521,
-    'Ousmane Dembele': 434,
-    'Vangelis Pavlidis': 48808,
-    'Alexander Sorloth': 2063,
-    'Moise Kean': 1164,
-    'Ollie Watkins': 19465,
+    'Robert Lewandowski': 521,      // Barcelona #9
+    'Ousmane Dembele': 153,         // PSG #10
+    'Vangelis Pavlidis': 48808,     // Benfica
+    'Alexander Sorloth': 8492,      // Atletico #9
+    'Moise Kean': 877,              // Fiorentina #20
+    'Ollie Watkins': 19366,         // Aston Villa #11
     // Scott
-    'Mohamed Salah': 306,
-    'Victor Osimhen': 47380,
-    'Vinícius Júnior': 5765,
-    'Cole Palmer': 284324,
-    'Lois Openda': 196925,
-    'Dusan Vlahovic': 159607,
+    'Mohamed Salah': 306,           // Liverpool #11
+    'Victor Osimhen': 2780,         // Galatasaray #45
+    'Vinícius Júnior': 762,         // Real Madrid #7
+    'Cole Palmer': 152982,          // Chelsea #10
+    'Lois Openda': 86,              // Juventus #20
+    'Dusan Vlahovic': 30415,        // Juventus #9
     // Josh
-    'Harry Kane': 184,
-    'Lautaro Martinez': 288,
-    'Omar Marmoush': 132874,
-    'Hugo Ekitike': 303523,
-    'Alassane Plea': 2034,
-    'Emanuel Emegha': 304826,
-};
-
-// Players and the team they play for (for API queries)
-const PLAYER_TEAMS = {
-    'Kylian Mbappe': 541,      // Real Madrid
-    'Alexander Isak': 34,      // Newcastle
-    'Serhou Guirassy': 165,    // BVB
-    'Jhon Duran': 66,          // Aston Villa
-    'Rasmus Højlund': 33,      // Man United
-    'Mika Biereth': 1393,      // Sturm Graz → Monaco? Check
-    'Erling Haaland': 50,      // Man City
-    'Bukayo Saka': 42,         // Arsenal
-    'Bradley Barcola': 85,     // PSG
-    'Julian Alvarez': 530,     // Atletico Madrid
-    'Jonathan David': 79,      // Lille
-    'Victor Aghehowa': 85,     // PSG → Check
-    'Viktor Gyökeres': 228,    // Sporting CP
-    'Raphinha': 529,           // Barcelona
-    'Lamine Yamal': 529,       // Barcelona
-    'Michael Olise': 157,      // Bayern Munich
-    'Cody Gakpo': 40,          // Liverpool
-    'Desire Doue': 85,         // PSG
-    'Robert Lewandowski': 529, // Barcelona
-    'Ousmane Dembele': 85,     // PSG
-    'Vangelis Pavlidis': 211,  // Benfica
-    'Alexander Sorloth': 530,  // Atletico Madrid
-    'Moise Kean': 502,         // Fiorentina
-    'Ollie Watkins': 66,       // Aston Villa
-    'Mohamed Salah': 40,       // Liverpool
-    'Victor Osimhen': 645,     // Galatasaray
-    'Vinícius Júnior': 541,    // Real Madrid
-    'Cole Palmer': 49,         // Chelsea
-    'Lois Openda': 168,        // Bayer Leverkusen
-    'Dusan Vlahovic': 496,     // Juventus
-    'Harry Kane': 157,         // Bayern Munich
-    'Lautaro Martinez': 505,   // Inter Milan
-    'Omar Marmoush': 50,       // Man City
-    'Hugo Ekitike': 497,       // AS Roma → Eintracht
-    'Alassane Plea': 163,      // Borussia M'gladbach? Check
-    'Emanuel Emegha': 95,      // Strasbourg
+    'Harry Kane': 184,              // Bayern #9
+    'Lautaro Martinez': 217,        // Inter #10
+    'Omar Marmoush': 132874,        // Man City
+    'Hugo Ekitike': 303523,         // Eintracht Frankfurt
+    'Alassane Plea': 2034,          // Gladbach
+    'Emanuel Emegha': 203762,       // Strasbourg #10
 };
 
 // ══════════════════════════════════════════════════════════════════
@@ -220,24 +177,21 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 // ══════════════════════════════════════════════════════════════════
 
 /**
- * Fetch league standings for all relevant leagues.
- * Returns: { league_id: { team_api_id: points } }
+ * Fetch league standings for all relevant domestic leagues.
+ * Returns: { team_api_id: { points, league_name } }
  */
 async function fetchAllLeagueStandings() {
-    const standingsMap = {}; // team_api_id → league_points
+    const standingsMap = {};
 
-    // Get unique league IDs we need
     const leagueIds = [...new Set(Object.values(TEAM_MAP).map(t => t.league_id))];
 
     for (const leagueId of leagueIds) {
-        // Skip UEFA competitions - those are handled separately
         if ([2, 3, 848].includes(leagueId)) continue;
 
         try {
             const res = await apiGet('/standings', { league: leagueId, season: SEASON });
             const standings = res.response?.[0]?.league?.standings;
             if (standings) {
-                // Some leagues have groups → flatten
                 const allTeams = standings.flat();
                 for (const entry of allTeams) {
                     standingsMap[entry.team.id] = {
@@ -257,10 +211,10 @@ async function fetchAllLeagueStandings() {
 
 /**
  * Fetch UEFA competition standings (Champions League, Europa, Conference).
- * Returns: { team_api_id: { phase_points, competition, milestone } }
+ * Returns: { team_api_id: { phase_points, competition } }
  */
 async function fetchUEFAStandings() {
-    const uefaMap = {}; // team_api_id → { phase_points, competition }
+    const uefaMap = {};
 
     const uefaLeagues = [
         { id: 2, key: 'champions_league' },
@@ -291,18 +245,12 @@ async function fetchUEFAStandings() {
 }
 
 /**
- * Fetch top scorers for leagues that have our players.
- * Returns: { player_api_id: total_goals }
+ * Fetch player goals from individual player stats.
+ * Returns: { player_name: total_goals }
  */
 async function fetchPlayerGoals() {
-    const goalMap = {}; // player_api_id → goals
+    const goalMap = {};
 
-    // Fetch from each relevant league's top scorers
-    // But more efficient: fetch player stats directly by player ID
-    const playerIds = Object.values(PLAYER_MAP);
-    const uniquePlayerIds = [...new Set(playerIds)];
-
-    // Batch by 5 to avoid rate limits, but we really need individual player stats
     for (const [playerName, playerId] of Object.entries(PLAYER_MAP)) {
         try {
             const res = await apiGet('/players', {
@@ -321,8 +269,6 @@ async function fetchPlayerGoals() {
                         leagueName.includes('supercoppa') || leagueName.includes('trophée des champions')) {
                         continue;
                     }
-                    // Count goals (API-Football already excludes own goals from the goals.total)
-                    // Penalty shootout goals are also not counted in regular stats
                     const goals = stat.goals?.total || 0;
                     totalGoals += goals;
                 }
@@ -330,7 +276,7 @@ async function fetchPlayerGoals() {
                 console.log(`   ⚽ ${playerName}: ${totalGoals} goals`);
             } else {
                 goalMap[playerName] = 0;
-                console.log(`   ⚠️  ${playerName}: No data found`);
+                console.log(`   ⚠️  ${playerName}: No data found (ID: ${playerId})`);
             }
             await sleep(6500);
         } catch (err) {
@@ -348,7 +294,8 @@ async function fetchPlayerGoals() {
 
 async function main() {
     console.log('🔄 Soccer Pool Tracker — Live Data Update');
-    console.log(`   Time: ${new Date().toISOString()}\n`);
+    console.log(`   Time: ${new Date().toISOString()}`);
+    console.log(`   Season: ${SEASON}\n`);
 
     if (!API_KEY) {
         console.log('❌ No API key. Set API_FOOTBALL_KEY environment variable.');
@@ -384,7 +331,7 @@ async function main() {
     const goalsPool = [];
 
     for (const roster of rosters.rosters) {
-        // ── Team scoring ──
+        // Team scoring
         let participantTeamTotal = 0;
         const teamBreakdowns = [];
 
@@ -403,7 +350,6 @@ async function main() {
 
             const leaguePts = leagueData.points || 0;
             const uefaPhasePts = uefaData.phase_points || 0;
-            // Cup milestones would require fixture analysis - omitted for now
             const total = leaguePts + uefaPhasePts;
             participantTeamTotal += total;
 
@@ -430,17 +376,12 @@ async function main() {
             teams: teamBreakdowns,
         });
 
-        // ── Goals scoring ──
+        // Goals scoring
         let participantGoalsTotal = 0;
         const playerBreakdowns = [];
 
         for (const player of roster.players) {
             const goals = playerGoals[player.name] || 0;
-
-            // Check active_from_date (for Phase 2 players)
-            // API-Football returns season totals, so if active_from_date is in the future
-            // relative to the season start, we'd need match-by-match data.
-            // For now, use the full count (most players are active from season start).
             participantGoalsTotal += goals;
             playerBreakdowns.push({ name: player.name, goals: goals });
         }
