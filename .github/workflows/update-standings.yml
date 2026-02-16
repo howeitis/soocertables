@@ -1,36 +1,47 @@
-name: Update Pool Standings
+name: Update Soccer Pool Standings
 
 on:
   schedule:
-    # Run twice daily: 06:00 UTC and 22:00 UTC
-    - cron: '0 6 * * *'
-    - cron: '0 22 * * *'
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 8 * * *'   # Daily at 8 AM UTC
+    - cron: '0 20 * * *'  # Daily at 8 PM UTC
+  workflow_dispatch:       # Allow manual trigger
 
 jobs:
-  update:
+  scrape:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Run data update script
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: node scripts/update-data.js
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run FBref scraper
+        run: node scripts/scrape-fbref.js
 
       - name: Commit and push updated results
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@users.noreply.github.com"
           git add data/results.json
-          git diff --staged --quiet || git commit -m "🔄 Auto-update standings $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "Auto-update standings $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          echo "::error::ACTION REQUIRED: Soccer Pool Scraper failed. Data is now stale. Review Action Logs."
+          # Send email notification via GitHub (repo owner gets notified on workflow failures)
+          # Additional webhook can be configured here:
+          # curl -X POST "${{ secrets.ALERT_WEBHOOK_URL }}" \
+          #   -H "Content-Type: application/json" \
+          #   -d '{"text":"ACTION REQUIRED: Soccer Pool Scraper failed. Data is now stale. Review Action Logs."}'

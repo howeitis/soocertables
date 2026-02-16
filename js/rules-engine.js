@@ -116,7 +116,8 @@ function calculatePlayerGoals(goals, activeFromDate) {
  * Calculates financial payouts for a pool.
  * Rules:
  *   - 1st place: $250, 2nd place: $50
- *   - If tie at 1st: split $300 evenly, 2nd gets $0
+ *   - If 2-way tie at 1st: split $300 evenly ($150 each), 2nd gets $0
+ *   - If 3+ way tie at 1st: winner decided alphabetically by first name
  *
  * @param {Array} standings - Sorted array of { participant, total }
  * @returns {Array} - Array of { participant, payout }
@@ -130,18 +131,29 @@ function calculatePayouts(standings) {
 
     const payouts = sorted.map(s => ({ participant: s.participant, payout: 0 }));
 
-    if (tiedForFirst.length >= 2) {
-        // Tie at 1st: split $300 evenly among tied
-        const splitAmount = Math.floor(300 / tiedForFirst.length);
+    if (tiedForFirst.length === 2) {
+        // 2-way tie: split $300 evenly ($150 each), 2nd gets $0
         payouts.forEach(p => {
             if (sorted.find(s => s.participant === p.participant && s.total === topScore)) {
-                p.payout = splitAmount;
+                p.payout = 150;
             }
         });
+    } else if (tiedForFirst.length >= 3) {
+        // 3+ way tie: alphabetical by first name decides winner
+        const alphabetical = [...tiedForFirst].sort((a, b) =>
+            a.participant.localeCompare(b.participant)
+        );
+        // First alphabetically gets $250
+        const winnerId = alphabetical[0].participant;
+        payouts.find(p => p.participant === winnerId).payout = 250;
+        // Find second place (next highest score after tied group, or second alphabetical)
+        const nonTied = sorted.filter(s => s.total < topScore);
+        if (nonTied.length > 0) {
+            payouts.find(p => p.participant === nonTied[0].participant).payout = 50;
+        }
     } else {
         // Clear 1st place
         payouts[0].payout = 250;
-        // 2nd place
         if (payouts.length > 1) {
             payouts[1].payout = 50;
         }

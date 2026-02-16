@@ -5,12 +5,16 @@
     "scripts": {
         "dev": "npx serve . -l 3000 --no-clipboard",
         "test": "node tests/rules-engine.test.js",
-        "update-data": "node scripts/update-data.js"
+        "scrape": "node scripts/scrape-fbref.js",
+        "update-data": "node scripts/scrape-fbref.js"
     },
     "keywords": [
         "soccer",
         "pool",
         "tracker"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "cheerio": "^1.2.0"
+    }
 }

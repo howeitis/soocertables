@@ -222,16 +222,23 @@ test('Tie at 1st: split $300, 2nd gets $0', () => {
     assert.strictEqual(payouts[2].payout, 0);
 });
 
-test('Three-way tie at 1st: split $300 three ways', () => {
+test('Three-way tie at 1st: alphabetical by first name gets $250', () => {
     const standings = [
-        { participant: 'A', total: 100 },
-        { participant: 'B', total: 100 },
-        { participant: 'C', total: 100 },
+        { participant: 'Charlie', total: 100 },
+        { participant: 'Alice', total: 100 },
+        { participant: 'Bob', total: 100 },
+        { participant: 'Dave', total: 50 },
     ];
     const payouts = calculatePayouts(standings);
-    assert.strictEqual(payouts[0].payout, 100);
-    assert.strictEqual(payouts[1].payout, 100);
-    assert.strictEqual(payouts[2].payout, 100);
+    // Alice is first alphabetically → $250
+    const alice = payouts.find(p => p.participant === 'Alice');
+    const bob = payouts.find(p => p.participant === 'Bob');
+    const charlie = payouts.find(p => p.participant === 'Charlie');
+    const dave = payouts.find(p => p.participant === 'Dave');
+    assert.strictEqual(alice.payout, 250);
+    assert.strictEqual(bob.payout, 0);
+    assert.strictEqual(charlie.payout, 0);
+    assert.strictEqual(dave.payout, 50); // next highest non-tied
 });
 
 // ═══════════════════════════════════════════════════════════════════
