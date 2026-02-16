@@ -1,0 +1,16 @@
+{
+    "name": "soccer-pool-tracker",
+    "version": "1.0.0",
+    "description": "2025-26 Soccer Pool Tracker — 6-person $600 prize pool competition",
+    "scripts": {
+        "dev": "npx serve . -l 3000 --no-clipboard",
+        "test": "node tests/rules-engine.test.js",
+        "update-data": "node scripts/update-data.js"
+    },
+    "keywords": [
+        "soccer",
+        "pool",
+        "tracker"
+    ],
+    "license": "MIT"
+}

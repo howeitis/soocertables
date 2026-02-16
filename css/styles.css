@@ -1,0 +1,711 @@
+/* ═══════════════════════════════════════════════════════════════
+   Soccer Pool Tracker — Design System
+   Premium dark theme with glassmorphism + micro-animations
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ── CSS Custom Properties ─────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-primary: #07070d;
+  --bg-secondary: #0e0e18;
+  --bg-card: rgba(16, 16, 28, 0.75);
+  --bg-card-hover: rgba(24, 24, 44, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --bg-accordion: rgba(12, 12, 22, 0.9);
+
+  /* Accents */
+  --accent-blue: #00d4ff;
+  --accent-blue-dim: rgba(0, 212, 255, 0.15);
+  --accent-gold: #f0b429;
+  --accent-gold-dim: rgba(240, 180, 41, 0.15);
+  --accent-green: #34d399;
+  --accent-green-dim: rgba(52, 211, 153, 0.15);
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+
+  /* Text */
+  --text-primary: #f0f0f5;
+  --text-secondary: #8888a0;
+  --text-muted: #555570;
+  --text-accent: var(--accent-blue);
+
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-accent: rgba(0, 212, 255, 0.2);
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-glow-blue: 0 0 20px rgba(0, 212, 255, 0.1);
+  --shadow-glow-gold: 0 0 20px rgba(240, 180, 41, 0.1);
+
+  /* Spacing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-med: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Reset & Base ──────────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Background gradient */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(0, 212, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(240, 180, 41, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(167, 139, 250, 0.02) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── App Container ─────────────────────────────────────────────── */
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ────────────────────────────────────────────────────── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 16px 0 0;
+  background: linear-gradient(180deg, var(--bg-primary) 60%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.header-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.header-title h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-title .season-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ── Tab Navigation ────────────────────────────────────────────── */
+.tab-nav {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px 8px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-med);
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass);
+}
+
+.tab-btn.active {
+  color: var(--bg-primary);
+  background: var(--accent-blue);
+  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.3);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.15));
+  pointer-events: none;
+}
+
+/* ── Content Area ──────────────────────────────────────────────── */
+.content {
+  flex: 1;
+  padding-bottom: 80px;
+}
+
+.view {
+  display: none;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+.view.active {
+  display: block;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Pool Summary Card ─────────────────────────────────────────── */
+.pool-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.pool-summary .pool-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+}
+
+.pool-summary .pool-amount {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-gold), #ffce54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Standings Table ───────────────────────────────────────────── */
+.standings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.standing-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-med);
+}
+
+.standing-row:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+}
+
+.standing-row.rank-1 {
+  border-color: rgba(240, 180, 41, 0.25);
+  box-shadow: var(--shadow-glow-gold);
+}
+
+.standing-row.rank-2 {
+  border-color: rgba(192, 192, 210, 0.15);
+}
+
+.standing-row.rank-3 {
+  border-color: rgba(205, 127, 50, 0.15);
+}
+
+.standing-main {
+  display: grid;
+  grid-template-columns: 44px 1fr auto auto;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.rank-badge {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.rank-1 .rank-badge {
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+  box-shadow: 0 0 12px rgba(240, 180, 41, 0.15);
+}
+
+.rank-2 .rank-badge {
+  background: rgba(192, 192, 210, 0.1);
+  color: #c0c0d2;
+}
+
+.rank-3 .rank-badge {
+  background: rgba(205, 127, 50, 0.1);
+  color: #cd7f32;
+}
+
+.rank-badge.rank-other {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+}
+
+.participant-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent-blue);
+  text-align: right;
+  min-width: 48px;
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.expand-icon {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  transition: transform var(--transition-med);
+  margin-left: 4px;
+}
+
+.standing-row.expanded .expand-icon {
+  transform: rotate(180deg);
+}
+
+/* ── Accordion Breakdown ───────────────────────────────────────── */
+.breakdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow);
+}
+
+.standing-row.expanded .breakdown {
+  max-height: 600px;
+}
+
+.breakdown-inner {
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.breakdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  margin-top: 6px;
+  background: var(--bg-accordion);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  transition: background var(--transition-fast);
+}
+
+.breakdown-item:hover {
+  background: rgba(20, 20, 36, 0.95);
+}
+
+.breakdown-name {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.breakdown-detail {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.breakdown-stat {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  white-space: nowrap;
+}
+
+/* Team breakdown specific columns */
+.breakdown-item.team-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 12px;
+}
+
+.breakdown-pts {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 40px;
+}
+
+.pts-league {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent-blue);
+}
+
+.pts-uefa {
+  background: rgba(167, 139, 250, 0.1);
+  color: var(--accent-purple);
+}
+
+.pts-cup {
+  background: rgba(240, 180, 41, 0.1);
+  color: var(--accent-gold);
+}
+
+/* ── Winningz View ─────────────────────────────────────────────── */
+.winningz-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.payout-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.payout-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.payout-card.team-card::before {
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+}
+
+.payout-card.goals-card::before {
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-green));
+}
+
+.payout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payout-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+}
+
+.payout-pot {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.payout-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payout-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: var(--bg-accordion);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.payout-entry.first-place {
+  border-color: rgba(240, 180, 41, 0.2);
+  background: rgba(240, 180, 41, 0.04);
+}
+
+.payout-entry.second-place {
+  border-color: rgba(192, 192, 210, 0.1);
+}
+
+.payout-place {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.payout-place-badge {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.first-place .payout-place-badge {
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+}
+
+.second-place .payout-place-badge {
+  background: rgba(192, 192, 210, 0.1);
+  color: #c0c0d2;
+}
+
+.payout-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.payout-amount {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.payout-amount.money {
+  color: var(--accent-green);
+}
+
+.payout-amount.money-back {
+  color: var(--text-secondary);
+}
+
+.payout-note {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-sm);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 10px 16px;
+  background: linear-gradient(0deg, var(--bg-primary) 70%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sync-time {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.sync-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  margin-right: 6px;
+  vertical-align: middle;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ── Loading State ─────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--accent-blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Empty / Error States ──────────────────────────────────────── */
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--accent-red);
+  font-size: 0.85rem;
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .standing-main {
+    grid-template-columns: 36px 1fr auto;
+    padding: 12px;
+  }
+
+  .stat-label {
+    display: none;
+  }
+
+  .participant-name {
+    font-size: 0.85rem;
+  }
+
+  .breakdown-item.team-item {
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+  }
+
+  .breakdown-pts {
+    display: none;
+  }
+
+  .breakdown-detail {
+    display: none;
+  }
+
+  .header-title h1 {
+    font-size: 0.95rem;
+  }
+
+  .payout-amount {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .winningz-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .app {
+    padding: 0 24px;
+  }
+}
+
+/* ── Scrollbar Styling ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Tie indicator ─────────────────────────────────────────────── */
+.tie-badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(248, 113, 113, 0.1);
+  color: var(--accent-red);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 6px;
+}

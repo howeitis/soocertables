@@ -1,0 +1,123 @@
+{
+  "pool_metadata": {
+    "season": "2025-2026",
+    "phase_2_start_date": "2026-02-01",
+    "participants": ["Owen", "Scott", "Josh", "Henry", "Erik", "Ian"]
+  },
+  "rosters": [
+    {
+      "participant": "Erik",
+      "teams": [
+        { "name": "Manchester City", "api_id": null },
+        { "name": "Atletico Madrid", "api_id": null },
+        { "name": "Benfica", "api_id": null },
+        { "name": "Ajax", "api_id": null },
+        { "name": "Feyenoord", "api_id": null },
+        { "name": "Fiorentina", "api_id": null }
+      ],
+      "players": [
+        { "name": "Kylian Mbappe", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Alexander Isak", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Serhou Guirassy", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Jhon Duran", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Rasmus Højlund", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Mika Biereth", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    },
+    {
+      "participant": "Henry",
+      "teams": [
+        { "name": "Bayern Munich", "api_id": null },
+        { "name": "Liverpool", "api_id": null },
+        { "name": "Borussia Dortmund", "api_id": null },
+        { "name": "Sporting CP", "api_id": null },
+        { "name": "Atalanta", "api_id": null },
+        { "name": "Lyon", "api_id": null }
+      ],
+      "players": [
+        { "name": "Erling Haaland", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Bukayo Saka", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Bradley Barcola", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Julian Alvarez", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Jonathan David", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Victor Aghehowa", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    },
+    {
+      "participant": "Owen",
+      "teams": [
+        { "name": "Arsenal", "api_id": null },
+        { "name": "Chelsea", "api_id": null },
+        { "name": "Celtic", "api_id": null },
+        { "name": "Fenerbahce", "api_id": null },
+        { "name": "Slavia Praha", "api_id": null },
+        { "name": "AS Monaco", "api_id": null }
+      ],
+      "players": [
+        { "name": "Viktor Gyökeres", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Raphinha", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Lamine Yamal", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Michael Olise", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Cody Gakpo", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Desire Doue", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    },
+    {
+      "participant": "Ian",
+      "teams": [
+        { "name": "Real Madrid", "api_id": null },
+        { "name": "Inter Milan", "api_id": null },
+        { "name": "Red Star Belgrade", "api_id": null },
+        { "name": "Olympiacos", "api_id": null },
+        { "name": "Sparta Praha", "api_id": null },
+        { "name": "Union SG", "api_id": null }
+      ],
+      "players": [
+        { "name": "Robert Lewandowski", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Ousmane Dembele", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Vangelis Pavlidis", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Alexander Sorloth", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Moise Kean", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Ollie Watkins", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    },
+    {
+      "participant": "Scott",
+      "teams": [
+        { "name": "PSG", "api_id": null },
+        { "name": "Napoli", "api_id": null },
+        { "name": "FC Porto", "api_id": null },
+        { "name": "Bayer Leverkusen", "api_id": null },
+        { "name": "Rangers", "api_id": null },
+        { "name": "Ipswich Town", "api_id": null }
+      ],
+      "players": [
+        { "name": "Mohamed Salah", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Victor Osimhen", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Vinícius Júnior", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Cole Palmer", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Lois Openda", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Dusan Vlahovic", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    },
+    {
+      "participant": "Josh",
+      "teams": [
+        { "name": "Barcelona", "api_id": null },
+        { "name": "Galatasaray", "api_id": null },
+        { "name": "PSV Eindhoven", "api_id": null },
+        { "name": "Aston Villa", "api_id": null },
+        { "name": "AS Roma", "api_id": null },
+        { "name": "Strasbourg", "api_id": null }
+      ],
+      "players": [
+        { "name": "Harry Kane", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Lautaro Martinez", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Omar Marmoush", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Hugo Ekitike", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Alassane Plea", "api_id": null, "active_from_date": "2025-08-01" },
+        { "name": "Emanuel Emegha", "api_id": null, "active_from_date": "2025-08-01" }
+      ]
+    }
+  ]
+}
