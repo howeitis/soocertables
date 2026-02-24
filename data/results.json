@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-23T22:12:10.982Z",
+  "last_updated": "2026-02-24T10:36:18.727Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -392,9 +392,40 @@
       ]
     },
     {
+      "participant": "Ian",
+      "total_goals": 67,
+      "rank": 4,
+      "players": [
+        {
+          "name": "Robert Lewandowski",
+          "goals": 10
+        },
+        {
+          "name": "Ousmane Dembele",
+          "goals": 8
+        },
+        {
+          "name": "Vangelis Pavlidis",
+          "goals": 20
+        },
+        {
+          "name": "Alexander Sorloth",
+          "goals": 12
+        },
+        {
+          "name": "Moise Kean",
+          "goals": 9
+        },
+        {
+          "name": "Ollie Watkins",
+          "goals": 8
+        }
+      ]
+    },
+    {
       "participant": "Henry",
       "total_goals": 64,
-      "rank": 4,
+      "rank": 5,
       "players": [
         {
           "name": "Erling Haaland",
@@ -419,37 +450,6 @@
         {
           "name": "Victor Aghehowa",
           "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Ian",
-      "total_goals": 63,
-      "rank": 5,
-      "players": [
-        {
-          "name": "Robert Lewandowski",
-          "goals": 10
-        },
-        {
-          "name": "Ousmane Dembele",
-          "goals": 8
-        },
-        {
-          "name": "Vangelis Pavlidis",
-          "goals": 17
-        },
-        {
-          "name": "Alexander Sorloth",
-          "goals": 12
-        },
-        {
-          "name": "Moise Kean",
-          "goals": 8
-        },
-        {
-          "name": "Ollie Watkins",
-          "goals": 8
         }
       ]
     },
