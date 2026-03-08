@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-08T09:02:48.896Z",
+  "last_updated": "2026-03-08T20:55:43.287Z",
   "season": "2025-2026",
   "team_pool": [
     {
       "participant": "Ian",
-      "total_points": 428,
+      "total_points": 431,
       "rank": 1,
       "teams": [
         {
@@ -44,10 +44,10 @@
         },
         {
           "name": "Union SG",
-          "league_points": 57,
+          "league_points": 60,
           "uefa_points": 9,
           "domestic_cup_points": 0,
-          "details": "League: 57 | UEFA: 9"
+          "details": "League: 60 | UEFA: 9"
         }
       ]
     },
@@ -151,7 +151,7 @@
     },
     {
       "participant": "Owen",
-      "total_points": 401,
+      "total_points": 404,
       "rank": 4,
       "teams": [
         {
@@ -184,10 +184,10 @@
         },
         {
           "name": "Slavia Praha",
-          "league_points": 58,
+          "league_points": 61,
           "uefa_points": 3,
           "domestic_cup_points": 0,
-          "details": "League: 58 | UEFA: 3"
+          "details": "League: 61 | UEFA: 3"
         },
         {
           "name": "AS Monaco",
@@ -200,7 +200,7 @@
     },
     {
       "participant": "Erik",
-      "total_points": 347,
+      "total_points": 350,
       "rank": 5,
       "teams": [
         {
@@ -219,10 +219,10 @@
         },
         {
           "name": "Benfica",
-          "league_points": 58,
+          "league_points": 59,
           "uefa_points": 9,
           "domestic_cup_points": 0,
-          "details": "League: 58 | UEFA: 9"
+          "details": "League: 59 | UEFA: 9"
         },
         {
           "name": "Ajax",
@@ -233,23 +233,23 @@
         },
         {
           "name": "Feyenoord",
-          "league_points": 48,
+          "league_points": 49,
           "uefa_points": 6,
           "domestic_cup_points": 0,
-          "details": "League: 48 | UEFA: 6"
+          "details": "League: 49 | UEFA: 6"
         },
         {
           "name": "Fiorentina",
-          "league_points": 24,
+          "league_points": 25,
           "uefa_points": 9,
           "domestic_cup_points": 0,
-          "details": "League: 24 | UEFA: 9"
+          "details": "League: 25 | UEFA: 9"
         }
       ]
     },
     {
       "participant": "Scott",
-      "total_points": 334,
+      "total_points": 335,
       "rank": 6,
       "teams": [
         {
@@ -268,10 +268,10 @@
         },
         {
           "name": "FC Porto",
-          "league_points": 65,
+          "league_points": 66,
           "uefa_points": 17,
           "domestic_cup_points": 0,
-          "details": "League: 65 | UEFA: 17"
+          "details": "League: 66 | UEFA: 17"
         },
         {
           "name": "Bayer Leverkusen",
