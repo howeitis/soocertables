@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-08T20:55:43.287Z",
+  "last_updated": "2026-03-09T10:33:17.996Z",
   "season": "2025-2026",
   "team_pool": [
     {
       "participant": "Ian",
-      "total_points": 431,
+      "total_points": 432,
       "rank": 1,
       "teams": [
         {
@@ -30,10 +30,10 @@
         },
         {
           "name": "Olympiacos",
-          "league_points": 53,
+          "league_points": 54,
           "uefa_points": 11,
           "domestic_cup_points": 0,
-          "details": "League: 53 | UEFA: 11"
+          "details": "League: 54 | UEFA: 11"
         },
         {
           "name": "Sparta Praha",
@@ -53,7 +53,7 @@
     },
     {
       "participant": "Henry",
-      "total_points": 422,
+      "total_points": 423,
       "rank": 2,
       "teams": [
         {
@@ -93,10 +93,10 @@
         },
         {
           "name": "Lyon",
-          "league_points": 45,
+          "league_points": 46,
           "uefa_points": 21,
           "domestic_cup_points": 0,
-          "details": "League: 45 | UEFA: 21"
+          "details": "League: 46 | UEFA: 21"
         }
       ]
     },
@@ -151,7 +151,7 @@
     },
     {
       "participant": "Owen",
-      "total_points": 404,
+      "total_points": 407,
       "rank": 4,
       "teams": [
         {
@@ -177,10 +177,10 @@
         },
         {
           "name": "Fenerbahce",
-          "league_points": 54,
+          "league_points": 57,
           "uefa_points": 12,
           "domestic_cup_points": 0,
-          "details": "League: 54 | UEFA: 12"
+          "details": "League: 57 | UEFA: 12"
         },
         {
           "name": "Slavia Praha",
