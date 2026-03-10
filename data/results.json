@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T21:06:03.311Z",
+  "last_updated": "2026-03-10T10:09:36.741Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -455,7 +455,7 @@
     },
     {
       "participant": "Henry",
-      "total_goals": 68,
+      "total_goals": 69,
       "rank": 6,
       "players": [
         {
@@ -468,7 +468,7 @@
         },
         {
           "name": "Bradley Barcola",
-          "goals": 9
+          "goals": 10
         },
         {
           "name": "Julian Alvarez",
