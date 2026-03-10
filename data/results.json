@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-10T10:09:36.741Z",
+  "last_updated": "2026-03-10T21:04:49.626Z",
   "season": "2025-2026",
   "team_pool": [
     {
       "participant": "Ian",
-      "total_points": 432,
+      "total_points": 435,
       "rank": 1,
       "teams": [
         {
@@ -23,10 +23,10 @@
         },
         {
           "name": "Red Star Belgrade",
-          "league_points": 60,
+          "league_points": 63,
           "uefa_points": 14,
           "domestic_cup_points": 0,
-          "details": "League: 60 | UEFA: 14"
+          "details": "League: 63 | UEFA: 14"
         },
         {
           "name": "Olympiacos",
@@ -392,9 +392,40 @@
       ]
     },
     {
-      "participant": "Josh",
+      "participant": "Erik",
       "total_goals": 70,
       "rank": 4,
+      "players": [
+        {
+          "name": "Kylian Mbappe",
+          "goals": 36
+        },
+        {
+          "name": "Alexander Isak",
+          "goals": 3
+        },
+        {
+          "name": "Serhou Guirassy",
+          "goals": 12
+        },
+        {
+          "name": "Jhon Duran",
+          "goals": 0
+        },
+        {
+          "name": "Rasmus Højlund",
+          "goals": 13
+        },
+        {
+          "name": "Mika Biereth",
+          "goals": 6
+        }
+      ]
+    },
+    {
+      "participant": "Josh",
+      "total_goals": 70,
+      "rank": 5,
       "players": [
         {
           "name": "Harry Kane",
@@ -419,37 +450,6 @@
         {
           "name": "Emanuel Emegha",
           "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Erik",
-      "total_goals": 69,
-      "rank": 5,
-      "players": [
-        {
-          "name": "Kylian Mbappe",
-          "goals": 36
-        },
-        {
-          "name": "Alexander Isak",
-          "goals": 3
-        },
-        {
-          "name": "Serhou Guirassy",
-          "goals": 11
-        },
-        {
-          "name": "Jhon Duran",
-          "goals": 0
-        },
-        {
-          "name": "Rasmus Højlund",
-          "goals": 13
-        },
-        {
-          "name": "Mika Biereth",
-          "goals": 6
         }
       ]
     },
