@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-10T21:04:49.626Z",
+  "last_updated": "2026-03-11T10:10:56.068Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -330,9 +330,40 @@
       ]
     },
     {
-      "participant": "Ian",
+      "participant": "Owen",
       "total_goals": 75,
       "rank": 2,
+      "players": [
+        {
+          "name": "Viktor Gyökeres",
+          "goals": 15
+        },
+        {
+          "name": "Raphinha",
+          "goals": 14
+        },
+        {
+          "name": "Lamine Yamal",
+          "goals": 14
+        },
+        {
+          "name": "Michael Olise",
+          "goals": 15
+        },
+        {
+          "name": "Cody Gakpo",
+          "goals": 8
+        },
+        {
+          "name": "Desire Doue",
+          "goals": 9
+        }
+      ]
+    },
+    {
+      "participant": "Ian",
+      "total_goals": 75,
+      "rank": 3,
       "players": [
         {
           "name": "Robert Lewandowski",
@@ -361,40 +392,40 @@
       ]
     },
     {
-      "participant": "Owen",
-      "total_goals": 73,
-      "rank": 3,
+      "participant": "Henry",
+      "total_goals": 71,
+      "rank": 4,
       "players": [
         {
-          "name": "Viktor Gyökeres",
-          "goals": 15
+          "name": "Erling Haaland",
+          "goals": 29
         },
         {
-          "name": "Raphinha",
-          "goals": 14
-        },
-        {
-          "name": "Lamine Yamal",
-          "goals": 14
-        },
-        {
-          "name": "Michael Olise",
-          "goals": 13
-        },
-        {
-          "name": "Cody Gakpo",
-          "goals": 8
-        },
-        {
-          "name": "Desire Doue",
+          "name": "Bukayo Saka",
           "goals": 9
+        },
+        {
+          "name": "Bradley Barcola",
+          "goals": 10
+        },
+        {
+          "name": "Julian Alvarez",
+          "goals": 16
+        },
+        {
+          "name": "Jonathan David",
+          "goals": 7
+        },
+        {
+          "name": "Victor Aghehowa",
+          "goals": 0
         }
       ]
     },
     {
       "participant": "Erik",
       "total_goals": 70,
-      "rank": 4,
+      "rank": 5,
       "players": [
         {
           "name": "Kylian Mbappe",
@@ -425,7 +456,7 @@
     {
       "participant": "Josh",
       "total_goals": 70,
-      "rank": 5,
+      "rank": 6,
       "players": [
         {
           "name": "Harry Kane",
@@ -449,37 +480,6 @@
         },
         {
           "name": "Emanuel Emegha",
-          "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Henry",
-      "total_goals": 69,
-      "rank": 6,
-      "players": [
-        {
-          "name": "Erling Haaland",
-          "goals": 29
-        },
-        {
-          "name": "Bukayo Saka",
-          "goals": 9
-        },
-        {
-          "name": "Bradley Barcola",
-          "goals": 10
-        },
-        {
-          "name": "Julian Alvarez",
-          "goals": 14
-        },
-        {
-          "name": "Jonathan David",
-          "goals": 7
-        },
-        {
-          "name": "Victor Aghehowa",
           "goals": 0
         }
       ]
