@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-11T21:04:53.606Z",
+  "last_updated": "2026-03-12T10:11:18.229Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -300,7 +300,7 @@
   "goals_pool": [
     {
       "participant": "Scott",
-      "total_goals": 213,
+      "total_goals": 223,
       "rank": 1,
       "players": [
         {
@@ -317,7 +317,7 @@
         },
         {
           "name": "Cole Palmer",
-          "goals": 174
+          "goals": 184
         },
         {
           "name": "Lois Openda",
@@ -330,9 +330,40 @@
       ]
     },
     {
+      "participant": "Ian",
+      "total_goals": 76,
+      "rank": 2,
+      "players": [
+        {
+          "name": "Robert Lewandowski",
+          "goals": 11
+        },
+        {
+          "name": "Ousmane Dembele",
+          "goals": 12
+        },
+        {
+          "name": "Vangelis Pavlidis",
+          "goals": 20
+        },
+        {
+          "name": "Alexander Sorloth",
+          "goals": 16
+        },
+        {
+          "name": "Moise Kean",
+          "goals": 9
+        },
+        {
+          "name": "Ollie Watkins",
+          "goals": 8
+        }
+      ]
+    },
+    {
       "participant": "Owen",
       "total_goals": 75,
-      "rank": 2,
+      "rank": 3,
       "players": [
         {
           "name": "Viktor Gyökeres",
@@ -357,37 +388,6 @@
         {
           "name": "Desire Doue",
           "goals": 9
-        }
-      ]
-    },
-    {
-      "participant": "Ian",
-      "total_goals": 75,
-      "rank": 3,
-      "players": [
-        {
-          "name": "Robert Lewandowski",
-          "goals": 11
-        },
-        {
-          "name": "Ousmane Dembele",
-          "goals": 11
-        },
-        {
-          "name": "Vangelis Pavlidis",
-          "goals": 20
-        },
-        {
-          "name": "Alexander Sorloth",
-          "goals": 16
-        },
-        {
-          "name": "Moise Kean",
-          "goals": 9
-        },
-        {
-          "name": "Ollie Watkins",
-          "goals": 8
         }
       ]
     },
