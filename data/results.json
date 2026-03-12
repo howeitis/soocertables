@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12T10:11:18.229Z",
+  "last_updated": "2026-03-12T21:50:56.038Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -331,7 +331,7 @@
     },
     {
       "participant": "Ian",
-      "total_goals": 76,
+      "total_goals": 77,
       "rank": 2,
       "players": [
         {
@@ -356,7 +356,7 @@
         },
         {
           "name": "Ollie Watkins",
-          "goals": 8
+          "goals": 9
         }
       ]
     },
