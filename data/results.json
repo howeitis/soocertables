@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-13T10:02:28.464Z",
+  "last_updated": "2026-03-13T21:51:14.959Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -331,12 +331,12 @@
     },
     {
       "participant": "Ian",
-      "total_goals": 77,
+      "total_goals": 80,
       "rank": 2,
       "players": [
         {
           "name": "Robert Lewandowski",
-          "goals": 11
+          "goals": 14
         },
         {
           "name": "Ousmane Dembele",
