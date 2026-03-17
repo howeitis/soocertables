@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-16T21:59:07.149Z",
+  "last_updated": "2026-03-17T10:38:28.496Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -200,7 +200,7 @@
     },
     {
       "participant": "Erik",
-      "total_points": 363,
+      "total_points": 366,
       "rank": 5,
       "teams": [
         {
@@ -240,10 +240,10 @@
         },
         {
           "name": "Fiorentina",
-          "league_points": 25,
+          "league_points": 28,
           "uefa_points": 9,
           "domestic_cup_points": 0,
-          "details": "League: 25 | UEFA: 9"
+          "details": "League: 28 | UEFA: 9"
         }
       ]
     },
