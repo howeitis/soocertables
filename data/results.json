@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-17T10:38:28.496Z",
+  "last_updated": "2026-03-19T08:56:08.749Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -151,7 +151,7 @@
     },
     {
       "participant": "Owen",
-      "total_points": 419,
+      "total_points": 422,
       "rank": 4,
       "teams": [
         {
@@ -177,10 +177,10 @@
         },
         {
           "name": "Fenerbahce",
-          "league_points": 57,
+          "league_points": 60,
           "uefa_points": 12,
           "domestic_cup_points": 0,
-          "details": "League: 57 | UEFA: 12"
+          "details": "League: 60 | UEFA: 12"
         },
         {
           "name": "Slavia Praha",
@@ -300,12 +300,12 @@
   "goals_pool": [
     {
       "participant": "Scott",
-      "total_goals": 234,
+      "total_goals": 247,
       "rank": 1,
       "players": [
         {
           "name": "Mohamed Salah",
-          "goals": 9
+          "goals": 10
         },
         {
           "name": "Victor Osimhen",
@@ -313,11 +313,11 @@
         },
         {
           "name": "Vinícius Júnior",
-          "goals": 13
+          "goals": 15
         },
         {
           "name": "Cole Palmer",
-          "goals": 194
+          "goals": 204
         },
         {
           "name": "Lois Openda",
@@ -331,12 +331,12 @@
     },
     {
       "participant": "Ian",
-      "total_goals": 80,
+      "total_goals": 82,
       "rank": 2,
       "players": [
         {
           "name": "Robert Lewandowski",
-          "goals": 14
+          "goals": 16
         },
         {
           "name": "Ousmane Dembele",
@@ -362,7 +362,7 @@
     },
     {
       "participant": "Owen",
-      "total_goals": 79,
+      "total_goals": 81,
       "rank": 3,
       "players": [
         {
@@ -371,7 +371,7 @@
         },
         {
           "name": "Raphinha",
-          "goals": 17
+          "goals": 19
         },
         {
           "name": "Lamine Yamal",
@@ -392,9 +392,71 @@
       ]
     },
     {
+      "participant": "Henry",
+      "total_goals": 73,
+      "rank": 4,
+      "players": [
+        {
+          "name": "Erling Haaland",
+          "goals": 30
+        },
+        {
+          "name": "Bukayo Saka",
+          "goals": 9
+        },
+        {
+          "name": "Bradley Barcola",
+          "goals": 10
+        },
+        {
+          "name": "Julian Alvarez",
+          "goals": 17
+        },
+        {
+          "name": "Jonathan David",
+          "goals": 7
+        },
+        {
+          "name": "Victor Aghehowa",
+          "goals": 0
+        }
+      ]
+    },
+    {
+      "participant": "Josh",
+      "total_goals": 72,
+      "rank": 5,
+      "players": [
+        {
+          "name": "Harry Kane",
+          "goals": 40
+        },
+        {
+          "name": "Lautaro Martinez",
+          "goals": 14
+        },
+        {
+          "name": "Omar Marmoush",
+          "goals": 6
+        },
+        {
+          "name": "Hugo Ekitike",
+          "goals": 11
+        },
+        {
+          "name": "Alassane Plea",
+          "goals": 1
+        },
+        {
+          "name": "Emanuel Emegha",
+          "goals": 0
+        }
+      ]
+    },
+    {
       "participant": "Erik",
       "total_goals": 71,
-      "rank": 4,
+      "rank": 6,
       "players": [
         {
           "name": "Kylian Mbappe",
@@ -419,68 +481,6 @@
         {
           "name": "Mika Biereth",
           "goals": 6
-        }
-      ]
-    },
-    {
-      "participant": "Henry",
-      "total_goals": 71,
-      "rank": 5,
-      "players": [
-        {
-          "name": "Erling Haaland",
-          "goals": 29
-        },
-        {
-          "name": "Bukayo Saka",
-          "goals": 9
-        },
-        {
-          "name": "Bradley Barcola",
-          "goals": 10
-        },
-        {
-          "name": "Julian Alvarez",
-          "goals": 16
-        },
-        {
-          "name": "Jonathan David",
-          "goals": 7
-        },
-        {
-          "name": "Victor Aghehowa",
-          "goals": 0
-        }
-      ]
-    },
-    {
-      "participant": "Josh",
-      "total_goals": 70,
-      "rank": 6,
-      "players": [
-        {
-          "name": "Harry Kane",
-          "goals": 38
-        },
-        {
-          "name": "Lautaro Martinez",
-          "goals": 14
-        },
-        {
-          "name": "Omar Marmoush",
-          "goals": 6
-        },
-        {
-          "name": "Hugo Ekitike",
-          "goals": 11
-        },
-        {
-          "name": "Alassane Plea",
-          "goals": 1
-        },
-        {
-          "name": "Emanuel Emegha",
-          "goals": 0
         }
       ]
     }
