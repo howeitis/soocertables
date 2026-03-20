@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T08:54:35.504Z",
+  "last_updated": "2026-03-20T20:37:59.933Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -249,7 +249,7 @@
     },
     {
       "participant": "Scott",
-      "total_points": 345,
+      "total_points": 348,
       "rank": 6,
       "teams": [
         {
@@ -261,10 +261,10 @@
         },
         {
           "name": "Napoli",
-          "league_points": 59,
+          "league_points": 62,
           "uefa_points": 8,
           "domestic_cup_points": 0,
-          "details": "League: 59 | UEFA: 8"
+          "details": "League: 62 | UEFA: 8"
         },
         {
           "name": "FC Porto",
