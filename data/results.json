@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-31T09:12:37.117Z",
+  "last_updated": "2026-03-31T20:47:38.631Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -362,7 +362,7 @@
     },
     {
       "participant": "Ian",
-      "total_goals": 83,
+      "total_goals": 84,
       "rank": 3,
       "players": [
         {
@@ -375,7 +375,7 @@
         },
         {
           "name": "Vangelis Pavlidis",
-          "goals": 20
+          "goals": 21
         },
         {
           "name": "Alexander Sorloth",
