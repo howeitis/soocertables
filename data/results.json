@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-04T08:53:56.042Z",
+  "last_updated": "2026-04-04T20:37:04.932Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -53,15 +53,15 @@
     },
     {
       "participant": "Henry",
-      "total_points": 442,
+      "total_points": 451,
       "rank": 2,
       "teams": [
         {
           "name": "Bayern Munich",
-          "league_points": 70,
+          "league_points": 73,
           "uefa_points": 21,
           "domestic_cup_points": 0,
-          "details": "League: 70 | UEFA: 21"
+          "details": "League: 73 | UEFA: 21"
         },
         {
           "name": "Liverpool",
@@ -72,17 +72,17 @@
         },
         {
           "name": "Borussia Dortmund",
-          "league_points": 61,
+          "league_points": 64,
           "uefa_points": 11,
           "domestic_cup_points": 0,
-          "details": "League: 61 | UEFA: 11"
+          "details": "League: 64 | UEFA: 11"
         },
         {
           "name": "Sporting CP",
-          "league_points": 65,
+          "league_points": 68,
           "uefa_points": 16,
           "domestic_cup_points": 0,
-          "details": "League: 65 | UEFA: 16"
+          "details": "League: 68 | UEFA: 16"
         },
         {
           "name": "Atalanta",
@@ -102,7 +102,7 @@
     },
     {
       "participant": "Josh",
-      "total_points": 440,
+      "total_points": 446,
       "rank": 3,
       "teams": [
         {
@@ -121,10 +121,10 @@
         },
         {
           "name": "PSV Eindhoven",
-          "league_points": 68,
+          "league_points": 71,
           "uefa_points": 8,
           "domestic_cup_points": 0,
-          "details": "League: 68 | UEFA: 8"
+          "details": "League: 71 | UEFA: 8"
         },
         {
           "name": "Aston Villa",
@@ -142,10 +142,10 @@
         },
         {
           "name": "Strasbourg",
-          "league_points": 40,
+          "league_points": 43,
           "uefa_points": 16,
           "domestic_cup_points": 0,
-          "details": "League: 40 | UEFA: 16"
+          "details": "League: 43 | UEFA: 16"
         }
       ]
     },
@@ -200,7 +200,7 @@
     },
     {
       "participant": "Erik",
-      "total_points": 372,
+      "total_points": 375,
       "rank": 5,
       "teams": [
         {
@@ -240,16 +240,16 @@
         },
         {
           "name": "Fiorentina",
-          "league_points": 29,
+          "league_points": 32,
           "uefa_points": 9,
           "domestic_cup_points": 0,
-          "details": "League: 29 | UEFA: 9"
+          "details": "League: 32 | UEFA: 9"
         }
       ]
     },
     {
       "participant": "Scott",
-      "total_points": 361,
+      "total_points": 367,
       "rank": 6,
       "teams": [
         {
@@ -275,17 +275,17 @@
         },
         {
           "name": "Bayer Leverkusen",
-          "league_points": 46,
+          "league_points": 49,
           "uefa_points": 12,
           "domestic_cup_points": 0,
-          "details": "League: 46 | UEFA: 12"
+          "details": "League: 49 | UEFA: 12"
         },
         {
           "name": "Rangers",
-          "league_points": 63,
+          "league_points": 66,
           "uefa_points": 4,
           "domestic_cup_points": 0,
-          "details": "League: 63 | UEFA: 4"
+          "details": "League: 66 | UEFA: 4"
         },
         {
           "name": "Ipswich Town",
