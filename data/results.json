@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-03T20:41:00.923Z",
+  "last_updated": "2026-04-04T08:53:56.042Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -249,15 +249,15 @@
     },
     {
       "participant": "Scott",
-      "total_points": 358,
+      "total_points": 361,
       "rank": 6,
       "teams": [
         {
           "name": "PSG",
-          "league_points": 60,
+          "league_points": 63,
           "uefa_points": 14,
           "domestic_cup_points": 0,
-          "details": "League: 60 | UEFA: 14"
+          "details": "League: 63 | UEFA: 14"
         },
         {
           "name": "Napoli",
@@ -330,9 +330,40 @@
       ]
     },
     {
+      "participant": "Ian",
+      "total_goals": 86,
+      "rank": 2,
+      "players": [
+        {
+          "name": "Robert Lewandowski",
+          "goals": 16
+        },
+        {
+          "name": "Ousmane Dembele",
+          "goals": 14
+        },
+        {
+          "name": "Vangelis Pavlidis",
+          "goals": 21
+        },
+        {
+          "name": "Alexander Sorloth",
+          "goals": 16
+        },
+        {
+          "name": "Moise Kean",
+          "goals": 9
+        },
+        {
+          "name": "Ollie Watkins",
+          "goals": 10
+        }
+      ]
+    },
+    {
       "participant": "Owen",
       "total_goals": 85,
-      "rank": 2,
+      "rank": 3,
       "players": [
         {
           "name": "Viktor Gyökeres",
@@ -356,37 +387,6 @@
         },
         {
           "name": "Desire Doue",
-          "goals": 10
-        }
-      ]
-    },
-    {
-      "participant": "Ian",
-      "total_goals": 84,
-      "rank": 3,
-      "players": [
-        {
-          "name": "Robert Lewandowski",
-          "goals": 16
-        },
-        {
-          "name": "Ousmane Dembele",
-          "goals": 12
-        },
-        {
-          "name": "Vangelis Pavlidis",
-          "goals": 21
-        },
-        {
-          "name": "Alexander Sorloth",
-          "goals": 16
-        },
-        {
-          "name": "Moise Kean",
-          "goals": 9
-        },
-        {
-          "name": "Ollie Watkins",
           "goals": 10
         }
       ]
