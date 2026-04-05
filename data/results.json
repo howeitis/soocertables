@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-04T20:37:04.932Z",
+  "last_updated": "2026-04-05T08:55:59.689Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -102,15 +102,15 @@
     },
     {
       "participant": "Josh",
-      "total_points": 446,
+      "total_points": 449,
       "rank": 3,
       "teams": [
         {
           "name": "Barcelona",
-          "league_points": 73,
+          "league_points": 76,
           "uefa_points": 16,
           "domestic_cup_points": 0,
-          "details": "League: 73 | UEFA: 16"
+          "details": "League: 76 | UEFA: 16"
         },
         {
           "name": "Galatasaray",
@@ -249,7 +249,7 @@
     },
     {
       "participant": "Scott",
-      "total_points": 367,
+      "total_points": 368,
       "rank": 6,
       "teams": [
         {
@@ -268,10 +268,10 @@
         },
         {
           "name": "FC Porto",
-          "league_points": 72,
+          "league_points": 73,
           "uefa_points": 17,
           "domestic_cup_points": 0,
-          "details": "League: 72 | UEFA: 17"
+          "details": "League: 73 | UEFA: 17"
         },
         {
           "name": "Bayer Leverkusen",
@@ -300,7 +300,7 @@
   "goals_pool": [
     {
       "participant": "Scott",
-      "total_goals": 259,
+      "total_goals": 269,
       "rank": 1,
       "players": [
         {
@@ -317,7 +317,7 @@
         },
         {
           "name": "Cole Palmer",
-          "goals": 214
+          "goals": 224
         },
         {
           "name": "Lois Openda",
@@ -331,12 +331,12 @@
     },
     {
       "participant": "Ian",
-      "total_goals": 86,
+      "total_goals": 87,
       "rank": 2,
       "players": [
         {
           "name": "Robert Lewandowski",
-          "goals": 16
+          "goals": 17
         },
         {
           "name": "Ousmane Dembele",
@@ -362,12 +362,12 @@
     },
     {
       "participant": "Owen",
-      "total_goals": 85,
+      "total_goals": 86,
       "rank": 3,
       "players": [
         {
           "name": "Viktor Gyökeres",
-          "goals": 16
+          "goals": 17
         },
         {
           "name": "Raphinha",
