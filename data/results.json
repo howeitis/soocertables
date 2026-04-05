@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-05T08:55:59.689Z",
+  "last_updated": "2026-04-05T20:38:44.349Z",
   "season": "2025-2026",
   "team_pool": [
     {
       "participant": "Ian",
-      "total_points": 462,
+      "total_points": 468,
       "rank": 1,
       "teams": [
         {
@@ -23,10 +23,10 @@
         },
         {
           "name": "Red Star Belgrade",
-          "league_points": 69,
+          "league_points": 72,
           "uefa_points": 14,
           "domestic_cup_points": 0,
-          "details": "League: 69 | UEFA: 14"
+          "details": "League: 72 | UEFA: 14"
         },
         {
           "name": "Olympiacos",
@@ -37,10 +37,10 @@
         },
         {
           "name": "Sparta Praha",
-          "league_points": 54,
+          "league_points": 57,
           "uefa_points": 13,
           "domestic_cup_points": 0,
-          "details": "League: 54 | UEFA: 13"
+          "details": "League: 57 | UEFA: 13"
         },
         {
           "name": "Union SG",
@@ -53,7 +53,7 @@
     },
     {
       "participant": "Henry",
-      "total_points": 451,
+      "total_points": 452,
       "rank": 2,
       "teams": [
         {
@@ -93,10 +93,10 @@
         },
         {
           "name": "Lyon",
-          "league_points": 47,
+          "league_points": 48,
           "uefa_points": 21,
           "domestic_cup_points": 0,
-          "details": "League: 47 | UEFA: 21"
+          "details": "League: 48 | UEFA: 21"
         }
       ]
     },
@@ -151,7 +151,7 @@
     },
     {
       "participant": "Owen",
-      "total_points": 425,
+      "total_points": 434,
       "rank": 4,
       "teams": [
         {
@@ -170,24 +170,24 @@
         },
         {
           "name": "Celtic",
-          "league_points": 61,
+          "league_points": 64,
           "uefa_points": 11,
           "domestic_cup_points": 0,
-          "details": "League: 61 | UEFA: 11"
+          "details": "League: 64 | UEFA: 11"
         },
         {
           "name": "Fenerbahce",
-          "league_points": 60,
+          "league_points": 63,
           "uefa_points": 12,
           "domestic_cup_points": 0,
-          "details": "League: 60 | UEFA: 12"
+          "details": "League: 63 | UEFA: 12"
         },
         {
           "name": "Slavia Praha",
-          "league_points": 64,
+          "league_points": 67,
           "uefa_points": 3,
           "domestic_cup_points": 0,
-          "details": "League: 64 | UEFA: 3"
+          "details": "League: 67 | UEFA: 3"
         },
         {
           "name": "AS Monaco",
@@ -200,7 +200,7 @@
     },
     {
       "participant": "Erik",
-      "total_points": 375,
+      "total_points": 376,
       "rank": 5,
       "teams": [
         {
@@ -233,10 +233,10 @@
         },
         {
           "name": "Feyenoord",
-          "league_points": 53,
+          "league_points": 54,
           "uefa_points": 6,
           "domestic_cup_points": 0,
-          "details": "League: 53 | UEFA: 6"
+          "details": "League: 54 | UEFA: 6"
         },
         {
           "name": "Fiorentina",
