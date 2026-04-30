@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T21:10:17.137Z",
+  "last_updated": "2026-04-30T10:14:38.166Z",
   "season": "2025-2026",
   "team_pool": [
     {
@@ -53,7 +53,7 @@
     },
     {
       "participant": "Henry",
-      "total_points": 490,
+      "total_points": 491,
       "rank": 2,
       "teams": [
         {
@@ -79,10 +79,10 @@
         },
         {
           "name": "Sporting CP",
-          "league_points": 72,
+          "league_points": 73,
           "uefa_points": 16,
           "domestic_cup_points": 0,
-          "details": "League: 72 | UEFA: 16"
+          "details": "League: 73 | UEFA: 16"
         },
         {
           "name": "Atalanta",
@@ -455,7 +455,7 @@
     },
     {
       "participant": "Henry",
-      "total_goals": 78,
+      "total_goals": 79,
       "rank": 6,
       "players": [
         {
@@ -472,7 +472,7 @@
         },
         {
           "name": "Julian Alvarez",
-          "goals": 19
+          "goals": 20
         },
         {
           "name": "Jonathan David",
